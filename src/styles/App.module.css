@@ -1,0 +1,17 @@
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 4rem;
+}
+
+@media (max-width: 650px) {
+  .mainContainer {
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+}

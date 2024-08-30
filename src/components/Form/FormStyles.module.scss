@@ -1,0 +1,55 @@
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+
+  .formLabel {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+
+    .textAndIcon {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .textTypeInput,
+    .timeTypeInput {
+      padding: 0.75rem;
+      border-radius: 6px;
+      background-color: var(--neutral-800);
+      color: var(--neutral-50);
+      font-size: 16px;
+      height: 45px;
+      width: 100%;
+
+      &:focus {
+        outline: 2px solid var(--neutral-700);
+      }
+    }
+
+    .textTypeInput {
+      &::placeholder {
+        color: var(--neutral-500);
+      }
+    }
+
+    .timeTypeInput {
+      &::-webkit-calendar-picker-indicator {
+        filter: invert(1);
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .formContainer {
+    width: 90%;
+  }
+}

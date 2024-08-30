@@ -1,0 +1,48 @@
+:root {
+  --neutral-50: #fafafa;
+
+  --neutral-500: #737373;
+  --neutral-700: #3f3f46;
+
+  --neutral-800: #262626;
+  --neutral-850: #1f1f1f;
+  --neutral-950: #0a0a0a;
+
+  --blue-600: #2563eb;
+  --blue-700: #1d4ed8;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: var(--neutral-950);
+  color: var(--neutral-50);
+}
+
+h2 {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+input {
+  outline: 0;
+  border: 0;
+}
